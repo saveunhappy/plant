@@ -3,7 +3,7 @@
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1>绿植领养平台</h1>
+        <h1>绿植购买平台</h1>
         <p class="lead text-muted">
           种子变绿植的过程不仅是碳中和的过程，也是爱地球理念传播的过程,低碳环保的大学生生活
           ,从一颗传播爱与生命的绿植种子开始。

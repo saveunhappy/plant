@@ -16,7 +16,7 @@
           <a href="index.html" class="navbar-brand">
             <small>
               <i class="fa"></i>
-              绿植领养系统
+              绿植后台管理系统
             </small>
           </a>
         </div>
@@ -75,43 +75,7 @@
 
             <b class="arrow"></b>
           </li>
-<!--          <li class="">-->
-<!--            <a href="#" class="dropdown-toggle">-->
-<!--              <i class="menu-icon fa fa-list"></i>-->
-<!--              <span class="menu-text"> 系统管理 </span>-->
-<!--              <b class="arrow fa fa-angle-down"></b>-->
-<!--            </a>-->
 
-<!--            <b class="arrow"></b>-->
-
-<!--            <ul class="submenu">-->
-<!--&lt;!&ndash;              <li class="active" id="business-user-sidebar">&ndash;&gt;-->
-<!--&lt;!&ndash;                <router-link to="/business/user">&ndash;&gt;-->
-<!--&lt;!&ndash;                  <i class="menu-icon fa fa-caret-right"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                  用户管理&ndash;&gt;-->
-<!--&lt;!&ndash;                </router-link>&ndash;&gt;-->
-<!--&lt;!&ndash;                <b class="arrow"></b>&ndash;&gt;-->
-<!--&lt;!&ndash;              </li>&ndash;&gt;-->
-
-<!--&lt;!&ndash;              <li class="">&ndash;&gt;-->
-<!--&lt;!&ndash;                <a href="business-user-sidebar">&ndash;&gt;-->
-<!--&lt;!&ndash;                  <i class="menu-icon fa fa-caret-right"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                  用户管理&ndash;&gt;-->
-<!--&lt;!&ndash;                </a>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                <b class="arrow"></b>&ndash;&gt;-->
-<!--&lt;!&ndash;              </li>&ndash;&gt;-->
-
-<!--              <li class="">-->
-<!--                <a href="jqgrid.html">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  权限管理-->
-<!--                </a>-->
-
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </li>-->
           <li class="open">
             <a href="#" class="dropdown-toggle">
               <i class="menu-icon fa fa-list"></i>
@@ -152,55 +116,10 @@
               <li class="" id="business-memberPlant-sidebar">
                 <router-link to="/business/memberPlant">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  领养管理
+                  购买记录
                 </router-link>
                 <b class="arrow"></b>
               </li>
-
-<!--              <li class="" id="business-userLog-sidebar">-->
-<!--                <router-link to="/business/userLog">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  领养信息审核-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-
-<!--              <li class="" id="business-applyPassed-sidebar">-->
-<!--                <router-link to="/business/applyPassed">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  领养审核通过-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-<!--              <li class="" id="business-applyDeny-sidebar">-->
-<!--                <router-link to="/business/applyDeny">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  领养审核未通过-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-<!--              <li class="" id="business-course-sidebar">-->
-<!--                <router-link to="/business/course">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  课程管理-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-<!--              <li class="" id="business-chapter-sidebar">-->
-<!--                <router-link to="/business/chapter">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  大章管理-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-
-<!--              <li class="" id="business-section-sidebar">-->
-<!--                <router-link to="/business/section">-->
-<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
-<!--                  小节管理-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
 
             </ul>
           </li>

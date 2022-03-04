@@ -2,8 +2,8 @@ package com.course.server.enums;
 
 public enum PlantStatusEnum {
 
-    YES("1", "已被领养"),
-    NO("0", "未被领养");
+    YES("1", "已上架"),
+    NO("0", "已下架");
 
     private String code;
 

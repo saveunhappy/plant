@@ -6,9 +6,7 @@ COURSE_STATUS={PUBLISH:{key:"P", value:"发布"},DRAFT:{key:"D", value:"草稿"}
 FILE_USE={COURSE:{key:"C", value:"课程"},TEACHER:{key:"T", value:"讲师"}};
 SMS_USE={REGISTER:{key:"R", value:"注册"},FORGET:{key:"F", value:"忘记密码"}};
 SMS_STATUS={USED:{key:"U", value:"已使用"},NOT_USED:{key:"N", value:"未使用"}};
-PLANT_STATUS={YES:{key:"1", value:"已被领养"},NO:{key:"0", value:"未被领养"}};
-APPLY_STATUS={AGREE:{key:"1", value:"同意领养"},DISAGREE:{key:"0", value:"拒绝领养"}};
-ADOPT_STATUS={APPLY:{key:"1", value:"申请领养"},FINISHED:{key:"0", value:"领养完成"}};
+PLANT_STATUS={YES:{key:"1", value:"已下架"},NO:{key:"0", value:"已上架"}};
 
 
 
@@ -20,3 +18,4 @@ COURSE_STATUS_ARRAY=[{key:"P", value:"发布"},{key:"D", value:"草稿"}];
 FILE_USE_ARRAY=[{key:"C", value:"课程"},{key:"T", value:"讲师"}];
 SMS_USE_ARRAY=[{key:"R", value:"注册"},{key:"F", value:"忘记密码"}];
 SMS_STATUS_ARRAY=[{key:"U", value:"已使用"},{key:"N", value:"未使用"}];
+PLANT_STATUS_ARRAY=[{key:"1", value:"已下架"},{key:"0", value:"已上架"}];

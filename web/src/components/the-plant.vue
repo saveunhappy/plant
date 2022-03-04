@@ -1,6 +1,8 @@
 <template>
   <div class="card mb-4 shadow-sm">
-    <img class="img-fluid" v-bind:src="plant.image">
+    <router-link v-bind:to="'/detail?id=' + plant.id">
+      <img class="img-fluid" v-bind:src="plant.image">
+    </router-link>
     <div class="card-body">
       <h4 class="">{{plant.name}}</h4>
       <p class="card-text">{{plant.summary}}</p>

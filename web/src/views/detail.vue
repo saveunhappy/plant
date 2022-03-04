@@ -13,8 +13,8 @@
             </p>
             <p class="course-head-desc">{{plant.summary}}</p>
             <p class="course-head-button-links">
-              <a v-show="!memberCourse.id" v-on:click="adopt()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">申请领养</a>
-              <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">您已领养</a>
+              <a v-show="!memberCourse.id" v-on:click="adopt()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">购买</a>
+              <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">购买成功</a>
             </p>
           </div>
         </div>
