@@ -6,6 +6,9 @@
     <div class="card-body">
       <h4 class="">{{plant.name}}</h4>
       <p class="card-text">{{plant.summary}}</p>
+      <p class="course-head-price">
+        <span class="price-now text-danger"><i class="fa fa-yen"></i>&nbsp;{{plant.price}}&nbsp;&nbsp;</span>
+      </p>
       <div class="d-flex justify-content-between align-items-center">
 
         <div class="btn-group">

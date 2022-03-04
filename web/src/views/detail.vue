@@ -12,6 +12,9 @@
               <span>{{PLANT_STATUS | optionKV(plant.status)}}</span>
             </p>
             <p class="course-head-desc">{{plant.summary}}</p>
+            <p class="course-head-price">
+              <span class="price-now text-danger"><i class="fa fa-yen"></i>&nbsp;{{plant.price}}&nbsp;&nbsp;</span>
+            </p>
             <p class="course-head-button-links">
               <a v-show="!memberCourse.id" v-on:click="adopt()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">购买</a>
               <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">购买成功</a>
@@ -86,7 +89,7 @@ export default {
         let resp = response.data;
         if(resp.success){
           _this.memberCourse = resp.content;
-          Toast.success("领养成功")
+          Toast.success("购买成功")
         }else{
           Toast.warning(resp.messages);
         }
