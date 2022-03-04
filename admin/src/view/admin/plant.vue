@@ -26,6 +26,10 @@
             <h3 class="search-title">
               <a href="#" class="blue">{{plant.name}}</a>
             </h3>
+
+            <p>
+              <span class="blue bolder bigger-150">{{plant.price}}&nbsp;<i class="fa fa-rmb"></i></span>&nbsp;
+            </p>
             <p>{{plant.summary}}</p>
             <p>
               <button v-on:click="edit(plant)" class="btn btn-white btn-xs btn-info btn-round">
@@ -120,6 +124,12 @@
                   </select>
                   </div>
                 </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">价格</label>
+                <div class="col-sm-10">
+                  <input v-model="plant.price" class="form-control">
+                </div>
+              </div>
             </form>
           </div>
           <div class="modal-footer">

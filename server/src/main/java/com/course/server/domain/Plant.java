@@ -1,5 +1,6 @@
 package com.course.server.domain;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Plant {
@@ -12,6 +13,8 @@ public class Plant {
     private String image;
 
     private String status;
+
+    private BigDecimal price;
 
     private Date createdAt;
 
@@ -57,6 +60,14 @@ public class Plant {
         this.status = status;
     }
 
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public Date getCreatedAt() {
         return createdAt;
     }
@@ -84,6 +95,7 @@ public class Plant {
         sb.append(", summary=").append(summary);
         sb.append(", image=").append(image);
         sb.append(", status=").append(status);
+        sb.append(", price=").append(price);
         sb.append(", createdAt=").append(createdAt);
         sb.append(", updatedAt=").append(updatedAt);
         sb.append("]");

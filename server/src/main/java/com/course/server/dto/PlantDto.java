@@ -1,5 +1,6 @@
 package com.course.server.dto;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -29,6 +30,11 @@ public class PlantDto {
      * 状态|枚举[PlantStatusEnum]:YES("1", "已被领养"),NO("0", "未被领养")
      */
     private String status;
+
+    /**
+     * 价格(元)
+     */
+    private BigDecimal price;
 
     /**
      * 创建时间
@@ -82,6 +88,14 @@ public class PlantDto {
         this.status = status;
     }
 
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public Date getCreatedAt() {
         return createdAt;
     }
@@ -110,6 +124,7 @@ public class PlantDto {
         sb.append(", summary=").append(summary);
         sb.append(", image=").append(image);
         sb.append(", status=").append(status);
+        sb.append(", price=").append(price);
         sb.append(", createdAt=").append(createdAt);
         sb.append(", updatedAt=").append(updatedAt);
         sb.append("]");

@@ -7,6 +7,7 @@
     <result column="summary" jdbcType="VARCHAR" property="summary" />
     <result column="image" jdbcType="VARCHAR" property="image" />
     <result column="status" jdbcType="CHAR" property="status" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
     <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
     <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
   </resultMap>
@@ -69,7 +70,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, `name`, summary, image, `status`, created_at, updated_at
+    id, `name`, summary, image, `status`, price, created_at, updated_at
   </sql>
   <select id="selectByExample" parameterType="com.course.server.domain.PlantExample" resultMap="BaseResultMap">
     select
@@ -103,11 +104,11 @@
   </delete>
   <insert id="insert" parameterType="com.course.server.domain.Plant">
     insert into plant (id, `name`, summary, 
-      image, `status`, created_at, 
-      updated_at)
+      image, `status`, price, 
+      created_at, updated_at)
     values (#{id,jdbcType=CHAR}, #{name,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, 
-      #{image,jdbcType=VARCHAR}, #{status,jdbcType=CHAR}, #{createdAt,jdbcType=TIMESTAMP}, 
-      #{updatedAt,jdbcType=TIMESTAMP})
+      #{image,jdbcType=VARCHAR}, #{status,jdbcType=CHAR}, #{price,jdbcType=DECIMAL}, 
+      #{createdAt,jdbcType=TIMESTAMP}, #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.course.server.domain.Plant">
     insert into plant
@@ -126,6 +127,9 @@
       </if>
       <if test="status != null">
         `status`,
+      </if>
+      <if test="price != null">
+        price,
       </if>
       <if test="createdAt != null">
         created_at,
@@ -149,6 +153,9 @@
       </if>
       <if test="status != null">
         #{status,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
       </if>
       <if test="createdAt != null">
         #{createdAt,jdbcType=TIMESTAMP},
@@ -182,6 +189,9 @@
       <if test="record.status != null">
         `status` = #{record.status,jdbcType=CHAR},
       </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
       <if test="record.createdAt != null">
         created_at = #{record.createdAt,jdbcType=TIMESTAMP},
       </if>
@@ -200,6 +210,7 @@
       summary = #{record.summary,jdbcType=VARCHAR},
       image = #{record.image,jdbcType=VARCHAR},
       `status` = #{record.status,jdbcType=CHAR},
+      price = #{record.price,jdbcType=DECIMAL},
       created_at = #{record.createdAt,jdbcType=TIMESTAMP},
       updated_at = #{record.updatedAt,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
@@ -221,6 +232,9 @@
       <if test="status != null">
         `status` = #{status,jdbcType=CHAR},
       </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
       <if test="createdAt != null">
         created_at = #{createdAt,jdbcType=TIMESTAMP},
       </if>
@@ -236,6 +250,7 @@
       summary = #{summary,jdbcType=VARCHAR},
       image = #{image,jdbcType=VARCHAR},
       `status` = #{status,jdbcType=CHAR},
+      price = #{price,jdbcType=DECIMAL},
       created_at = #{createdAt,jdbcType=TIMESTAMP},
       updated_at = #{updatedAt,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=CHAR}
